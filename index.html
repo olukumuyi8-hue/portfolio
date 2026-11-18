@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olusola Kumuyi | Data Annotator, Content Reviewer &amp; QA Specialist</title>
+<meta name="description" content="Olusola Kumuyi is a Maryland-based data annotator, content reviewer and quality assurance specialist with 20+ years of professional experience. Remote ready.">
+<meta property="og:title" content="Olusola Kumuyi | Data Annotation &amp; Quality Assurance">
+<meta property="og:description" content="Text classification, NER, pairwise comparison, RLHF-style evaluation, transcription and QA. Available now for remote work.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1b3fc4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231b3fc4'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23ffd75e' font-family='Georgia' font-weight='bold'%3EOK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Olusola Kumuyi","jobTitle":"Data Annotator and Quality Assurance Specialist","email":"olukumuyi8@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Severn","addressRegion":"MD","addressCountry":"US"},"url":"https://www.linkedin.com/in/olu-kumuyi-2451a5436/"}
+</script>
+<style>
+:root{
+  --royal:#1b3fc4; --royal-deep:#0f2589; --royal-night:#091655; --ice:#eef2ff; --mist:#dce4ff;
+  --ink:#0b1445; --muted:#4a5688; --gold:#ffd75e; --white:#fff;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--body);color:var(--ink);background:var(--ice);line-height:1.65;font-size:1.04rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1100px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;letter-spacing:-.02em}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(9,22,85,.92);backdrop-filter:blur(10px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--display);font-weight:800;color:var(--white);text-decoration:none;font-size:1.15rem}
+.logo b{color:var(--gold)}
+nav ul{display:flex;gap:1.4rem;list-style:none}
+nav ul a{color:#c9d5ff;text-decoration:none;font-size:.93rem;font-weight:500;transition:color .2s}
+nav ul a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--royal-night)!important;padding:.4rem .95rem;border-radius:99px;font-weight:600!important}
+@media(max-width:820px){nav ul li:not(:last-child){display:none}}
+
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 85% -10%,#3a62ee 0%,transparent 60%),linear-gradient(160deg,var(--royal) 0%,var(--royal-deep) 70%,var(--royal-night) 100%);color:var(--white);padding:5.5rem 0 6rem;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(180deg,#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.status{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.12);padding:.35rem .9rem;border-radius:99px;font-size:.88rem;margin-bottom:1.4rem}
+.status i{width:9px;height:9px;border-radius:50%;background:#58e6a0;box-shadow:0 0 0 0 rgba(88,230,160,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(88,230,160,0)}100%{box-shadow:0 0 0 0 rgba(88,230,160,0)}}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.8rem);font-weight:800}
+.hero .role{font-size:1.2rem;color:#cdd8ff;margin:1.1rem 0 1.8rem;max-width:34ch}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.8rem 1.5rem;border-radius:12px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:var(--royal-night);box-shadow:0 8px 24px rgba(255,215,94,.28)}
+.btn.line{border:1.5px solid rgba(255,255,255,.5);color:var(--white)}
+.btn.line:hover{background:rgba(255,255,255,.12)}
+
+/* annotation demo */
+.demo{background:rgba(9,22,85,.55);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:1.4rem 1.4rem 1.2rem;box-shadow:0 30px 60px rgba(0,0,10,.35)}
+.demo-bar{display:flex;justify-content:space-between;font-size:.8rem;color:#aebcf5;margin-bottom:1rem}
+.demo p{font-size:1.12rem;line-height:2.5;color:#f2f5ff}
+.tag{position:relative;padding:.1rem .3rem;border-radius:6px;transition:background .5s,color .5s}
+.tag::after{content:attr(data-l);position:absolute;left:0;top:-1.05rem;font-size:.66rem;font-weight:600;line-height:1;background:var(--gold);color:var(--royal-night);padding:.15rem .4rem;border-radius:4px;opacity:0;transform:translateY(5px);transition:opacity .4s,transform .4s;white-space:nowrap}
+.tag.on{background:rgba(255,215,94,.22);box-shadow:inset 0 -2px 0 var(--gold)}
+.tag.on::after{opacity:1;transform:none}
+.verdict{margin-top:.9rem;padding-top:.9rem;border-top:1px dashed rgba(255,255,255,.25);font-size:.9rem;color:#cdd8ff;min-height:2.6em;opacity:0;transition:opacity .6s}
+.verdict.on{opacity:1}
+.verdict b{color:var(--gold)}
+
+/* stats */
+.stats{margin-top:-2.6rem;position:relative;z-index:2}
+.stat-row{background:var(--white);border-radius:18px;box-shadow:0 20px 50px rgba(15,37,137,.16);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.stat{padding:1.5rem 1rem;text-align:center;border-right:1px solid var(--mist)}
+.stat:last-child{border:0}
+.stat strong{display:block;font-family:var(--display);font-size:2.1rem;color:var(--royal);line-height:1}
+.stat span{font-size:.88rem;color:var(--muted)}
+@media(max-width:700px){.stat-row{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--mist)}}
+
+/* sections */
+section{padding:5.5rem 0 0}
+section:last-of-type{padding-bottom:5.5rem}
+.sec-head{margin-bottom:2.2rem;max-width:62ch}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--royal-deep)}
+.sec-head p{color:var(--muted);margin-top:.7rem}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem}
+@media(max-width:850px){.about{grid-template-columns:1fr}}
+.about p+p{margin-top:1rem}
+.facts{background:var(--royal-night);color:#dbe3ff;border-radius:18px;padding:1.6rem;align-self:start}
+.facts h3{color:var(--gold);font-size:1.15rem;margin-bottom:.9rem}
+.facts li{list-style:none;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:.96rem}
+.facts li:last-child{border:0}
+
+/* skills */
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.1rem}
+.skill{background:var(--white);border-radius:16px;padding:1.4rem;border-top:4px solid var(--royal);transition:transform .25s,box-shadow .25s}
+.skill:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(27,63,196,.15)}
+.skill h3{font-size:1.1rem;margin-bottom:.8rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips span{background:var(--ice);color:var(--royal-deep);border-radius:99px;padding:.22rem .7rem;font-size:.85rem;font-weight:500}
+
+/* timeline */
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:3px;background:linear-gradient(var(--royal),var(--mist));border-radius:3px}
+.job{position:relative;background:var(--white);border-radius:16px;padding:1.4rem 1.6rem;margin-bottom:1.1rem}
+.job::before{content:"";position:absolute;left:-2rem;top:1.7rem;width:17px;height:17px;border-radius:50%;background:var(--white);border:4px solid var(--royal)}
+.job.now::before{background:var(--gold);border-color:var(--royal);animation:pulse2 2.4s infinite}
+@keyframes pulse2{50%{box-shadow:0 0 0 9px rgba(27,63,196,.15)}}
+.job-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem 1rem}
+.job h3{font-size:1.25rem;color:var(--royal-deep)}
+.when{font-weight:600;color:var(--royal);font-size:.92rem}
+.org{color:var(--muted);font-size:.95rem;margin-bottom:.6rem}
+.job ul{padding-left:1.1rem;color:#27306a}
+.job li{margin:.3rem 0}
+
+/* projects documentation */
+.docs{display:grid;gap:1rem}
+details{background:var(--white);border-radius:16px;border:1px solid var(--mist);transition:box-shadow .25s,border-color .25s}
+details[open]{border-color:var(--royal);box-shadow:0 18px 40px rgba(27,63,196,.14)}
+summary{cursor:pointer;list-style:none;padding:1.3rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:1.25rem;color:var(--royal-deep)}
+summary small{display:block;color:var(--muted);font-family:var(--body);font-size:.92rem;font-weight:400;letter-spacing:0;margin-top:.2rem}
+.plus{flex:none;width:34px;height:34px;border-radius:50%;background:var(--royal);position:relative;transition:transform .3s,background .3s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:#fff;transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .3s}
+details[open] .plus{background:var(--gold);transform:rotate(180deg)}
+details[open] .plus::before,details[open] .plus::after{background:var(--royal-night)}
+details[open] .plus::after{transform:translate(-50%,-50%) rotate(0)}
+.doc-body{padding:0 1.5rem 1.6rem;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem 2rem;animation:open .35s ease}
+@keyframes open{from{opacity:0;transform:translateY(-8px)}}
+@media(max-width:760px){.doc-body{grid-template-columns:1fr}}
+.doc-body h4{font-family:var(--display);color:var(--royal);font-size:.98rem;margin-bottom:.3rem}
+.doc-body p,.doc-body li{font-size:.96rem;color:#27306a}
+.doc-body ul{padding-left:1.1rem}
+.doc-body .full{grid-column:1/-1}
+.tools{display:flex;flex-wrap:wrap;gap:.4rem}
+.tools span{background:var(--royal);color:#fff;border-radius:6px;padding:.15rem .6rem;font-size:.8rem}
+.note{margin-top:1.2rem;font-size:.9rem;color:var(--muted);border-left:4px solid var(--gold);padding-left:1rem}
+
+/* education + certs */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.card{background:var(--white);border-radius:16px;padding:1.6rem}
+.card h3{font-size:1.2rem;color:var(--royal-deep);margin-bottom:.4rem}
+.card ul{list-style:none}
+.card li{padding:.5rem 0 .5rem 1.6rem;position:relative;border-bottom:1px solid var(--ice)}
+.card li:last-child{border:0}
+.card li::before{content:"";position:absolute;left:0;top:.95rem;width:10px;height:10px;background:var(--royal);border-radius:3px;transform:rotate(45deg)}
+
+/* resume */
+.resume{background:linear-gradient(135deg,var(--royal),var(--royal-night));color:#fff;border-radius:24px;padding:3rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;position:relative;overflow:hidden}
+.resume::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(255,215,94,.14)}
+.resume h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.resume p{color:#cdd8ff;margin-top:.7rem;max-width:48ch}
+.resume .btns{position:relative;z-index:1;flex-direction:column}
+@media(max-width:800px){.resume{grid-template-columns:1fr;padding:2rem}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.contact a{background:var(--white);border-radius:16px;padding:1.3rem 1.5rem;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s}
+.contact a:hover{transform:translateY(-4px);background:var(--royal);color:#fff;box-shadow:0 16px 36px rgba(27,63,196,.25)}
+.contact a:hover small{color:#cdd8ff}
+.contact small{display:block;color:var(--muted);margin-bottom:.2rem}
+.contact strong{font-family:var(--display);font-size:1.05rem;word-break:break-word}
+
+footer{background:var(--royal-night);color:#aebcf5;text-align:center;padding:2rem 0;font-size:.9rem}
+
+/* scroll reveal: one gentle entrance for the section headings only */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}.rv{opacity:1;transform:none}
+  .tag::after,.verdict{opacity:1}.tag{background:rgba(255,215,94,.22)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top">Olusola <b>Kumuyi</b></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Project docs</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a class="nav-cta" href="#resume">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="status"><i></i>Available now · Remote ready</div>
+      <h1>Olusola Kumuyi</h1>
+      <p class="role">Data annotator, content reviewer and quality assurance specialist with 20+ years of professional experience.</p>
+      <div class="btns">
+        <a class="btn gold" href="#resume">Download resume</a>
+        <a class="btn line" href="#projects">Read project documentation</a>
+        <a class="btn line" href="https://www.linkedin.com/in/olu-kumuyi-2451a5436/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="demo" aria-label="Animated example of an annotation task">
+      <div class="demo-bar"><span>Annotation task: sentiment + entities</span><span id="clock">Reviewing…</span></div>
+      <p id="sample">
+        <span class="tag" data-l="PERSON" data-order="1">A resident</span> wrote to the
+        <span class="tag" data-l="ORG" data-order="2">county service centre</span> on
+        <span class="tag" data-l="DATE" data-order="3">Monday</span>:
+        <span class="tag" data-l="POSITIVE" data-order="4">the new portal is fast</span>, but
+        <span class="tag" data-l="NEGATIVE · ISSUE: REFUND" data-order="5">the refund took too long</span>.
+      </p>
+      <div class="verdict" id="verdict"><b>Label:</b> mixed sentiment. <b>Intent:</b> complaint with partial praise. <b>Guideline check:</b> passed.</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap stats">
+  <div class="stat-row">
+    <div class="stat"><strong data-count="20" data-suffix="+">0</strong><span>Years of experience</span></div>
+    <div class="stat"><strong data-count="4" data-suffix="">0</strong><span>Years in data annotation (2022 – now)</span></div>
+    <div class="stat"><strong data-count="18" data-suffix="%">0</strong><span>Faster case handling (process improvement)</span></div>
+    <div class="stat"><strong>Immediate</strong><span>Start, remote or hybrid</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Careful work, consistently delivered</h2></div>
+    <div class="about">
+      <div class="rv">
+        <p>I’m a dependable professional with more than two decades of progressive experience across customer service, operations management, administrative coordination and data evaluation. I’m based in Maryland and available to start immediately.</p>
+        <p>I now specialise in data annotation, content review and quality assurance. I bring the same precision and accountability from my professional career to annotation tasks, transcription, pairwise comparison and human feedback evaluation. I work well in remote environments, pick up new platforms and guidelines quickly, and deliver accurate, high-volume output that meets demanding quality benchmarks.</p>
+        <p>My focus is simple: read the guidelines closely, apply them the same way every time, and explain each decision clearly in writing.</p>
+      </div>
+      <aside class="facts rv">
+        <h3>At a glance</h3>
+        <ul>
+          <li>Location: Severn, Maryland, USA</li>
+          <li>Authorised to work in the USA</li>
+          <li>Available for remote work, immediate start</li>
+          <li>Languages: English (native / professional)</li>
+          <li>Tools: Microsoft Office, Google Workspace, Zoom, Teams, Slack</li>
+          <li>Strengths: attention to detail, high-volume throughput, independent and reliable</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Skills and specialisms</h2><p>Everything below comes from my CV, grouped by the kind of work it supports.</p></div>
+    <div class="skill-grid">
+      <div class="skill"><h3>Data annotation</h3><div class="chips"><span>Text classification &amp; labelling</span><span>Sentiment &amp; intent tagging</span><span>Named entity recognition (NER)</span><span>Content categorisation</span><span>Image tagging &amp; labelling</span><span>Bounding box annotation</span></div></div>
+      <div class="skill"><h3>Evaluation and feedback</h3><div class="chips"><span>Pairwise comparison</span><span>Response quality rating</span><span>Prompt &amp; response evaluation</span><span>Human feedback (RLHF)</span><span>Guideline-based evaluation</span><span>Search relevance assessment</span><span>Search query evaluation</span></div></div>
+      <div class="skill"><h3>Quality assurance</h3><div class="chips"><span>Dataset quality review</span><span>Quality assurance &amp; validation</span><span>Content review &amp; rating</span><span>Content moderation</span><span>Research &amp; fact-checking</span><span>Data entry &amp; verification</span><span>Process improvement</span></div></div>
+      <div class="skill"><h3>Transcription and language</h3><div class="chips"><span>Audio &amp; video transcription</span><span>Verbatim transcription</span><span>Clean read formatting</span><span>Transcript quality checking</span><span>Subtitle &amp; caption review</span><span>Document translation (EN)</span></div></div>
+      <div class="skill"><h3>Tools and platforms</h3><div class="chips"><span>Microsoft Office Suite</span><span>Microsoft Excel (Advanced)</span><span>Google Workspace</span><span>Crowdsourcing platforms</span><span>Annotation platforms</span><span>Data management systems</span><span>Zoom / Teams / Slack</span></div></div>
+      <div class="skill"><h3>Professional strengths</h3><div class="chips"><span>Written communication</span><span>Critical thinking &amp; sound judgment</span><span>Guideline interpretation</span><span>Technical documentation</span><span>Remote collaboration</span><span>Deadline-driven</span><span>Quick learner</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Professional experience</h2><p>From public-sector service to remote data evaluation, newest first.</p></div>
+    <div class="timeline">
+
+      <article class="job now rv">
+        <div class="job-top"><h3>Freelance Data Annotator &amp; Content Reviewer</h3><span class="when">2022 – Present</span></div>
+        <p class="org">Remote · Data evaluation platforms</p>
+        <ul>
+          <li>Perform text classification, sentiment tagging, named entity recognition and structured data labelling, applying detailed project guidelines with precision and consistency.</li>
+          <li>Complete pairwise comparison, search relevance rating and content evaluation tasks across crowdsourcing platforms with consistently high accuracy scores.</li>
+          <li>Evaluate model-generated outputs for accuracy, tone, relevance and guideline compliance, giving structured written feedback to support model improvement.</li>
+          <li>Transcribe audio and video in verbatim and clean-read formats, meeting strict turnaround deadlines and quality benchmarks.</li>
+          <li>Apply rating rubrics and evolving task guidelines with minimal supervision, showing strong independent judgement.</li>
+          <li>Maintain a consistently high task acceptance rate through accurate, well-reasoned, guideline-compliant output.</li>
+        </ul>
+      </article>
+
+      <article class="job rv">
+        <div class="job-top"><h3>Customer Service Supervisor</h3><span class="when">Mar 2016 – Dec 2021</span></div>
+        <p class="org">Anne Arundel County Government · Annapolis, MD</p>
+        <ul>
+          <li>Supervised a team of customer service representatives in a high-volume county service centre, managing performance, scheduling and quality standards.</li>
+          <li>Monitored and evaluated staff interactions for quality compliance, with structured feedback and coaching.</li>
+          <li>Handled escalated complaints and complex service issues with consistently high resolution rates.</li>
+          <li>Kept accurate records of interactions, case outcomes and operational metrics in government management systems.</li>
+          <li>Supported process improvement that reduced average case handling time by 18% and raised customer satisfaction scores.</li>
+          <li>Trained and onboarded new team members on service standards, systems and compliance.</li>
+        </ul>
+      </article>
+
+      <article class="job rv">
+        <div class="job-top"><h3>Operations &amp; Administrative Coordinator</h3><span class="when">Jun 2012 – Feb 2016</span></div>
+        <p class="org">Sodexo · Bethesda, MD</p>
+        <ul>
+          <li>Coordinated daily operational logistics across a multi-site facilities management contract to meet contractual standards.</li>
+          <li>Maintained operational records, compliance documentation and reporting schedules for senior management and client review.</li>
+          <li>Managed supplier and vendor relationships, processing purchase orders and ensuring timely delivery.</li>
+          <li>Worked with cross-functional teams to resolve issues and keep business running.</li>
+          <li>Produced weekly and monthly performance reports and presented findings to department heads and contract managers.</li>
+        </ul>
+      </article>
+
+      <article class="job rv">
+        <div class="job-top"><h3>Customer Service Representative</h3><span class="when">Aug 2008 – May 2012</span></div>
+        <p class="org">Verizon Wireless · Owings Mills, MD</p>
+        <ul>
+          <li>Delivered solution-focused service by phone and in store for a national telecommunications provider.</li>
+          <li>Resolved billing disputes, technical queries and account requests with strong customer satisfaction ratings.</li>
+          <li>Documented customer interactions and resolutions in CRM systems to established standards.</li>
+          <li>Met and exceeded first-contact resolution, call handling time and satisfaction targets in every review period.</li>
+          <li>Supported onboarding of new team members on systems, service standards and complaint handling.</li>
+        </ul>
+      </article>
+
+      <article class="job rv">
+        <div class="job-top"><h3>Administrative &amp; Data Entry Officer</h3><span class="when">2004 – 2008</span></div>
+        <p class="org">Howard County Department of Social Services · Ellicott City, MD</p>
+        <ul>
+          <li>Managed accurate, timely data entry of resident case records, benefit applications and correspondence across several systems.</li>
+          <li>Verified, updated and maintained documentation to quality and compliance standards, protecting data integrity.</li>
+          <li>Prepared formal reports, case summaries and internal communications for caseworkers and supervisors.</li>
+          <li>Provided scheduling, filing and public enquiry support in person and by phone.</li>
+          <li>Contributed to a records digitisation project that improved retrieval accuracy and reduced processing backlogs.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Project documentation</h2><p>Six annotation workflows I work on, documented the way I’d hand them to a project lead: objective, method, quality checks and deliverable. Open any one to read it.</p></div>
+    <div class="docs">
+
+      <details open>
+        <summary><div><h3>Text classification and sentiment tagging</h3><small>Structured labelling against a written guideline</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Assign each text item to the correct category, sentiment and intent so the dataset is consistent enough to train or test a model.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: short and long text items with a label schema. Output: one validated label set per item, plus a note where an item is ambiguous.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Read the guideline and its edge-case examples before labelling the first item.</li><li>Label by what the text says, not by what I assume the author meant.</li><li>Flag mixed or unclear items instead of forcing a label.</li><li>Re-check a sample of my own labels against the guideline before submitting.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Consistency across similar items, guideline compliance, and acceptance rate on review.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Annotation platforms</span><span>Excel</span><span>Google Workspace</span></div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><div><h3>Named entity recognition (NER)</h3><small>Finding and typing the entities inside text</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Mark people, organisations, dates, places and other entity types so extraction models learn clean boundaries.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: raw text and an entity type list. Output: spans tagged with the right type and no overlapping or partial boundaries.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Apply the guideline’s rules on what counts as one entity, including titles, abbreviations and nested names.</li><li>Tag the full span, not just the keyword.</li><li>Resolve conflicts by the guideline’s priority order and record the reasoning for unusual cases.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Boundary accuracy, correct type, and no missed entities in a second read.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Annotation platforms</span><span>Data management systems</span></div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><div><h3>Pairwise comparison and human feedback (RLHF)</h3><small>Judging which model response is better, and why</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Compare model-generated responses against a rubric and give preference signals that help improve model behaviour.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: a prompt with two or more responses. Output: a preference ranking, rubric scores and a short written justification.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Check each response for accuracy, relevance, tone and guideline compliance.</li><li>Verify factual claims before scoring them.</li><li>Write the justification in plain, evidence-based sentences that point to the specific problem or strength.</li><li>Stay consistent as rubrics and guidelines evolve.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Reasoned judgements, fact-checking and consistent rubric use across tasks.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Crowdsourcing platforms</span><span>Rating rubrics</span></div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><div><h3>Search relevance and query evaluation</h3><small>Rating how well results answer what a person asked</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Rate how well a result satisfies a query so search systems can be measured and improved.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: a query and one or more results. Output: a relevance rating, with a note on the reason for low scores.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Work out the likely intent behind the query first.</li><li>Open and verify the result rather than rating by title alone.</li><li>Apply the rating scale as written and avoid drifting toward the middle.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Intent accuracy, verified results and scale consistency.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Research &amp; fact-checking</span><span>Browser</span></div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><div><h3>Audio and video transcription</h3><small>Verbatim and clean-read formats</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Turn recordings into accurate, correctly formatted transcripts that meet turnaround deadlines.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: audio or video files and a style guide. Output: a verbatim or clean-read transcript, with speaker labels where required.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Follow the style guide on fillers, false starts and unclear speech.</li><li>Review the full transcript against the recording before delivery.</li><li>Use the same approach for subtitle and caption review and transcript quality checking.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Accuracy, format compliance and on-time delivery.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Transcription tools</span><span>Microsoft Word</span></div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><div><h3>Content moderation and dataset quality review</h3><small>Reviewing content and data against policy</small></div><span class="plus" aria-hidden="true"></span></summary>
+        <div class="doc-body">
+          <div><h4>Objective</h4><p>Check content and datasets against policy and quality rules, and catch errors before they reach a model or a customer.</p></div>
+          <div><h4>Inputs and outputs</h4><p>Input: content items or dataset samples plus a policy or checklist. Output: pass or fail decisions with a note for each failure.</p></div>
+          <div class="full"><h4>Method</h4><ul><li>Check for missing information, inconsistencies and guideline violations.</li><li>Keep decisions consistent by following the written policy each time.</li><li>Report recurring problems so the guideline or process can be improved. This draws on my earlier work in quality monitoring and process improvement, which cut average case handling time by 18% at Anne Arundel County Government.</li></ul></div>
+          <div><h4>Quality controls</h4><p>Decision consistency and clear written reasoning.</p></div>
+          <div><h4>Tools</h4><div class="tools"><span>Data management systems</span><span>Excel (Advanced)</span></div></div>
+        </div>
+      </details>
+    </div>
+    <p class="note">These pages describe how I work. They don’t include client data, platform names or confidential guidelines.</p>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Education and certifications</h2></div>
+    <div class="two">
+      <div class="card rv">
+        <h3>B.Sc. Business Administration</h3>
+        <p><strong>Bowie State University</strong> · Bowie, MD · Graduated 2004</p>
+        <ul style="margin-top:.8rem">
+          <li>Majored in Management</li>
+          <li>Coursework in data systems, organisational behaviour and operations management</li>
+          <li>Built the analytical, documentation and communication skills I use every day</li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h3>Certifications and development</h3>
+        <ul>
+          <li>Data Annotation &amp; Labelling Fundamentals</li>
+          <li>Microsoft Office Specialist (Excel &amp; Word)</li>
+          <li>Evaluation &amp; Human Feedback Methodology</li>
+          <li>Google Digital Garage: Digital Skills Certificate</li>
+          <li>Quality Assurance Principles &amp; Practice</li>
+          <li>Research Methods &amp; Information Verification</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="wrap">
+    <div class="resume rv">
+      <div>
+        <h2>Download my resume</h2>
+        <p>The full CV as a PDF: experience, skills, education and certifications. References are available on request.</p>
+      </div>
+      <div class="btns">
+        <a class="btn gold" id="dl" href="Olusola_Kumuyi_CV.pdf" download="Olusola_Kumuyi_CV.pdf">Download resume (PDF)</a>
+        <a class="btn line" id="view" href="Olusola_Kumuyi_CV.pdf" target="_blank" rel="noopener">View in browser</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Let’s work together</h2><p>I’m available now for remote data annotation, content review and quality assurance work.</p></div>
+    <div class="contact">
+      <a href="mailto:olukumuyi8@gmail.com"><small>Email</small><strong>olukumuyi8@gmail.com</strong></a>
+      <a href="tel:+13014127606"><small>Phone</small><strong>301-412-7606</strong></a>
+      <a href="https://www.linkedin.com/in/olu-kumuyi-2451a5436/" target="_blank" rel="noopener"><small>LinkedIn</small><strong>olu-kumuyi</strong></a>
+      <a href="#top"><small>Location</small><strong>Severn, Maryland, USA</strong></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Olusola Kumuyi · Data Annotation · Quality Assurance · Content Review</div></footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // hero: annotation plays once, tag by tag
+  var tags = [].slice.call(document.querySelectorAll(".tag")).sort(function(a,b){return a.dataset.order-b.dataset.order});
+  var verdict = document.getElementById("verdict"), clock = document.getElementById("clock");
+  if(reduce){ verdict.classList.add("on"); clock.textContent = "Complete"; }
+  else{
+    tags.forEach(function(t,i){ setTimeout(function(){ t.classList.add("on"); }, 900 + i*850); });
+    setTimeout(function(){ verdict.classList.add("on"); clock.textContent = "Complete"; }, 900 + tags.length*850 + 300);
+  }
+
+  // scroll reveal + stat counters
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{threshold:.12}) : null;
+  [].forEach.call(document.querySelectorAll(".rv"), function(el){ io ? io.observe(el) : el.classList.add("in"); });
+
+  function count(el){
+    var end = +el.dataset.count, suf = el.dataset.suffix || "", start = null;
+    if(reduce){ el.textContent = end + suf; return; }
+    function step(ts){ start = start || ts; var p = Math.min((ts-start)/1400,1);
+      el.textContent = Math.round(end*(1-Math.pow(1-p,3))) + suf; if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll("[data-count]");
+  if(io && !reduce){
+    var co = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ count(e.target); co.unobserve(e.target); } }); },{threshold:.6});
+    [].forEach.call(counters, function(c){ co.observe(c); });
+  } else { [].forEach.call(counters, count); }
+})();
+</script>
+<script>
+/* Resume is embedded so the download works on any host, with or without the PDF file beside this page */
+(function(){
+  var B64="JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIgL0Y0IDUgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMSAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZCAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjIgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago0IDAgb2JqCjw8Ci9CYXNlRm9udCAvWmFwZkRpbmdiYXRzIC9OYW1lIC9GMyAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjQgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Db250ZW50cyAxMSAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKNyAwIG9iago8PAovQ29udGVudHMgMTIgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTAgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxMCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0F1dGhvciAoYW5vbnltb3VzKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwOTA1MTE1NjU4KzAwJzAwJykgL0NyZWF0b3IgKGFub255bW91cykgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwOTA1MTE1NjU4KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKHVuc3BlY2lmaWVkKSAvVGl0bGUgKHVudGl0bGVkKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Db3VudCAyIC9LaWRzIFsgNiAwIFIgNyAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDU0MTQKPj4Kc3RyZWFtCkdiIi8rPkJlZ11QKCovL15ydGtiQW4zTF5RWyljUlorSmlaPjpjVXBBa3VgQCZzaC9zI3JQJCZkNWdnWVtnRjZLbDdTb3U/KkNaWDhTbXBLYj8oWEJZNmxcR2AuNVYicicvPTBxKUJTdUlWQkdELCw2TXAzZGxkQlkwIlpIVWBXZDtsXDIsVjNoXXV1JilWRHVPOy1gPT5kYEpuLF1MdFYmOzEnNShqWXVEOGAtYzItJy5dQyEuUTVBLmw+SnNlKm0ndFhlJ10nW3I7KUY3bmc3N2ViOS1rbmslYS8iMzM8biQuSlZnXk89WDdHaChAdVJiLmVWQCtXOz1UR2JkZT84VldMSC11N2hHaEh0aV1ZY2cqJWgxIStFVUNfXEMmPURCMXRPJyVnRnVhX1xuQSpfNFlYUEVlaSp1V0pHKmdXT2xGOmdyS15cLyg5cStMKkg1L2AlOVA3UChaJ2kiQiJhY2UhJzpUZ1FfVE0waEhiVUtoSF5aNVk/dTFdcjpCMixBRnFyJHJEYkpPMjpIc0psLDtsIWo7IUNvZ1RwSC4vTFAzclZJWzI7JSslPSpCR3EvblxIX1tyQ25SQSJkJE4zOiFRQVp1SE5vRmRvRTMsbT5cTWVwMGheREBCRElDTVBSUixRUWFHZlcrXlpoSS1mZ2ZcLS1Kc1BeZzdaSWIqcVhnLyIuZ0hOIXRCPCRDWEpEJSZZWEtpMV9WXSNoOkVoVUZuX0JgKUk4bjtcU1FxWHFgdHQ1W14oaURtKCJRQj0pLmdaNTZSJjRgV29KPVxBOnE4JW9COm9BL1k0OW1DNzs/LyUnWio3SHMkTXIqYCNDdTpfM0tyPElCUHVZLjlwbEJEYVBJKUclRCJYaGc6cmhtUEgyJGp0YDNSSGw9c1BQVWA9RmhGKzhLW1I/aWU/LUkqISVoTyRGXU5dOV90R25rVl5fNXFdbEc9Y2tDJ1tfKEhVQl5MWjpDMkw/RDNGak0/bWslZDtpRUQkVWVARl5ucVVTSHFJRkU2IlkxLSlpM2JiY1g6PUU2amMwcCJeJTwiLyw0N3RAR2EuVFYoU1slSHEuOWx0TzEhUyEkYSMrVzltcCdrZFtaI3BGVlZRJVxON3VrVVhJJkk3OixaOlo3T2U/WmxAVkBYPT4uRi0uSilJWClwR1ZKSlNUMzY6aSJnKDIvVmdhTUZlbWc3Vy8jUCtvYGBvV1xQKCxvdFk2J2xmY1Y5LV1NZz9LNE5MKjRqJE1gY2VuOltaWiJAJnJvaiVkYzMyQm9ML3E/RDBmPSZlZyIlWiM0RCFpVm9TXVdYKio7PiVqcGpEZF0sX0ArOCJHM1w/NWQ1YEZAS3JcTURXRi5ScDpnRE1DKlFZNmI4OT0yTFZMUEIlKiVwUjhWcFkodC9PLTUycjdlXUlpO1RiI3QqX0QzOWA9aV1vQ2tYPTM7JidqTClHLGpRTVFvNS42M1xVMWcpRjdDI1pfcjUhK2orPFIlQTMxJTdAdUQuLWRDWnEpJU5xczFLNEVTK0RCK3NWMmtWX1c2RGl1SG4jPlpPXy5aKDxcJHBSVl88QzFQUTQvOFZdIlQ1J1JZcU9uY3ArYD1VR29EOEpmb1tqNl1QSFhgL1AmaG5ZZVZGa1w0JEEyO2M4NT9oM2xXTz5GXzw7MmZiMjhqcDBhYlctN2UvaGg8LEBjJ2R1U2wtX3BWXi8hSl9LNTohPmdsMy9WRmB1JmkxSUZFWUVYXCZvdSFRQENePEVtYWNPYnMrQk9IT082Q2kkI0ArRlxwWUlgMzQuLkEvNDUoVDJORldGNGtxMS1zaHVLLEY1Q1smUSs2U0pjQjQiR1EwLTdrLEFRUjR1WClCJ2hCS0JIXkxcUEsqTWFVK2RnX0Q8bmZMITouJzMrXV8uOipcKCtORF4oJ1ZMJlMyNTkpNW0jJStuRHQvL0IkKj1GWlZFPipqRlFWTl88bj9dKWJBZEAoZDlxWy0qNVRjNS5bZHMmJkxvL10wXmBWSXFQZChyIyluLChJMEBVa09WYUhlcXEqR0kwVWJRJ0Q4TEVkJDhKTD1LRUhXPjopU3M6QTVwb1w2cSZsZSM7QGdwIj81Y2lZY0VfQ1JBTy1FXywpMChIZk00LE9QOUpsPSpdYGlJSDk6LS9wYFNEamIvVlU/Yj9Pc206UE1XSzlKPiwoXCQ+LHJQZSFbcEFGMmJAclVYNjYiZDlTI25BISlJSCpmcU9AbSFwM1VxW3UjKys+XzxnLXI0T15YbT5rNWk2aFUvdU1PKjBFdDEwN145OiZEXzxSXWlnIVQjQi9EISsjSSxRMWExQ0BSZFZDL1tjXF0vVSdCMGBVQlUuZiYqL21Dams5SF83Ri08b1VNSVg3MXNJMltQNUVmSEghL0E8Yi1SaGEjT1tKOEBpZUtyQWQjSigjQ29fQ00rODotIjhCW1QkQkhUJDFLNyFBXmYna009VG40Iy0zU3EvLnBmKXM2bicmRE1cNGw3WS1NY1g/ZUBQJSk5cmhqQkJmcmtGLlQ5JE9WZG1DVEdAPF9CalxPN0xLalE9JWgzTUpHQl9ZK1llXiJiS0AvZjpfcC0xNGE3P3BoPTpaKSk9SXNxL0c1TlxEJDgyKlA4YWAxY2lBISpoUCo1NERNVk4mPSo4Vj8uNUIva14pPlInNzRIIXE6LGYySSRtLDNcOUdJc0chXi1zUyE/Vl5wM0ZGKksmKWRTY2sqS15wdTBESzw2R1pALyFZSV1NUWsoc28tWSdXKm5sK0hQNmJUWDYrMU84aiJBWElCdSRaa05rKWZlO2UzZ1QsaCR0bDtGNChBRiVsQV1GYiVaL19jRT1TJWsmWWtiRVQ+UW1fY1Q7Nloqa3RqampaLU5YJTZwLkklPk1XXGlWZ2FrZV9wOj1cPSNhUVQlUCJIQDdWKmYzWyxPQkYtWS5DPlZbJ1pfVnRUZ3BNZyomamoqa05bKFJdaWlVLFR0NXUsbXM4OVZGNl0oImMvQCQyPCddKzJUQ1ZLa1NcPk9PTituPGlTWCFKZzYxVVtLMy45UV5eLUYyYSRpcmpyU2k0UGI2NT1ULTZzN21KSSFYcGtTQlNucE0pVzZTPEdOWG1XY2E8Y3BmPjQvWklrSzJda0wiK08iLm5oSTAhcUY8b1ZoYCtVbjYyQyFyaClIRzVAISUpa0RmQitJV3M6c2lESSRHWDhcRU9kdVFJJ29OTXFhcmEiZiVSRSZqZ3Ahc044RE4nJC1dc3VtXEhOcEYmaDl1XS81WlBWbjZTLCtRJm5iNUI9XWBPJlwzaEA8JEVRJllUTHNfRGZwbk1ITUAkY2ozRVMrIj9oKEMrSiUtVVc5Oy1sPilUWk1qYVtdOmVcNl48ZlRTbCg5JihnIjgzTU4/Ri9hMV1qclNWWGNsSmElMlhEaSRzMktcO3FTcSJQOVgwYlJHTCtGZyJaKm1rbGtqSWBhbCtTYkw1XjBfVSg8XlkrQGVJWDhBTShNdT1mL2MiVTUvI1RBWW5vOEpLQ2k7cWdxJGUrXmJvMEZMc0A/TUplaTw8VCppWHMqaWotNWpsX3FFaUslQENCMzkrXHVfYyw/PSxZUi9mWDIhU0w5X209XWBZJ3JTKUpwZiVjMUxtS2JHZEFWIyd1bW5LXSw+YGYpUE5gTFhDREhoJ0ssKXMoJCYsIz45WDZjXDdtUGxmVTFZOk4qWERaIzNxSlJGQic1MFZXYiNvWmBidSptTm1PZy9JNlhWMGxDUCFZMlh0Uz9WJWVhZ2I6V28zdD42VDJHLU9aKUNEVkdXdWNBcFNcZVUvT2tuRUluMS5hK1QhQkQlZkxEdWxRWFgsTDlkY1dOclcjYS5iN1N0bi5UWlJPKC09ZmFeUGtTJjU5YXBJI1tYPD9VVExTbD03MUk6ZEw0dUZ0Xllub2wzQHFnYWRkUUh0UDxXZF44UyJcZlBVJE9uQTcqLjV1OlUmaClNLSxpLkJjVWRtT3U8J2MqaGRTPmpCdE9KKnFVJWE/R29EZis3LiszYHUqLi8tTGc6WjxNYT5obyI2c1tbUSctdUo8YyJlOEAiMm4jcVsjZ1NhJXVsKms9b29fLEVySSReY01nUF9dVnRWRUwqSUVsKT0zMk00YjVqcUltM09xWHAvU1dUKG1CQ2FUWUhsLUFlUixJPDMtb1JVdUVjKi8jOUgrTHIwPyJFYVcoTT1dI2IoaHVodXRyN19SU1ojLjJmSik4b2Q8Q2JFPmE5J141UlhxQ2o1IWIlWGxMMm0tMzVwLFhSXnJxcVo9I0hpIkBWT1MtXkc3LzlgRVZgODBVZEgrJGhMaE4mWnBHcHMwZSplIyN1SCRnWmtXVyJTMGtKaWFwQlVLUmMxUSolUmMoJS4ldTdHRnRIPnM2VURNVl1aTm5EUilrJCojcVoyIlZaYEBgLFNCWCs0LyluclEtREFtUS9XS0A7S2YkW08lYVtiOnQvR0lvcC9Zcj1AKyk7al5CaFZSRD0zdSQtX2Z1cj5AST5AXTtWXyQ/Yj9ZalknM0FGLU5jQVs4M11zIS1qW2opLS8tbzBQQFMiV10rVDpHJTRmISthV2E8JFo/KyEhZCJaTlBJZD0tMD0qb18hOU9uajddZW4laUAvYSVITSZcYjE8KXE/SCxeIjMjRXQ3SV45c2FYNi1DVm4vWTlxSWpeblpqIydUNyYmVGojZTVuM1MtNU9MMEdYdEZWPDJxcjYlRSZvITtZZFc5bWY5WFFeTWgtJkUjaV5SPW1Ma2ghLlpaUEBIamUvUlYoW0FQMytIVWg9UjMtXmE0QytVSkghMCVZaClCVlV1PjVXckwsJWhEQyhIcSFOPyhsS1ZwcVEmLHI7RW43X0pLaDZmYUE5VywhbnJ1Vk0qbzAzdC0jJzddVG5RMEVkQUt1Kk0xW0I7V1NlVk1GLkMhUElST2FpcCZeX2x0OTMlaDosSXNuJ0FaRz0vQklkR1Q0VSNiLDc6ZksnZyxsMUNVbnRNNzlhS0prIT8wW1tubGIwcWkpUiJEXkkrKzJZcVg8cDImO1MnUkAiOUgya0VoR3FpW2dpYiowKjlBIiwnJ0B0ajdCQlxvU11aJzcoVlRKN3MmOFVbVktCRlpqN25yUz5zNlMwJWRGV3NHTClZXjFXaSpobjApcFxPYUwqa2giJ2hhdGQnJ0tzQyVmbTpYcF1WaHEsXFg6OE9GPEguWDo2MEc3YVImTGkrLEFgNiIsdV8ncD8iPiJHJmk9YTZwPkptRUt1cC5LKSkjR09TRkAsNWw+WV81bFlsPXNQRE1YLy1RSCRxKXREbnRLKjksIlstc0Ywa0ImXmZZZjhsPE9gbVZgbDE/VGVcIVFkV2dtVzspRyRiPkRzak9IZFIwVDtZKVJdSW9dcjhyXmdfXjsxakJEZVk1W084cU85Zj4kdUltPUFUby9IYiVTTUc1MUwuL0JXLkxGVzZEMTtGZ29eN0JJZTQyTlNVZmArK3A9XWFSSHRNZnJjLCpYWC4zJSNAKDEiQGVfRTNedDZzQC0+XEQxJi1JKzJOZ1k3Sm1ic21eSzVFJ2NEVF5WQT0pQ29dJDJrXXA9Y144R2FEPT9XRWZrTFdRUT5PSmQrXSw5aFhtKiheKFxLMFRFXVxKRS5HaSRMNCRROUl1UlIxTW5WYjxGVyNIUV1AUm1JZldGLCQpQi9pWko9IWY/JWhya3Jxal5aOiVHZFVwJ2tGb2Y5cVxuYiddOlpdaDE0b0tCNEtpWDVkZSZedF4pZj90PClhYDwoZzdOb0JQZnIuSSdPOF9YclNMTSxoODZURXNKMmtQVz5ocDtFOHItPTFBSXBzI1xIPzgsVi9PKj5SI0pFYmZkLE4hbidDXjo5QEBEIWVoJCkpOVdrb21IZW5RVFFTSTxPYS0nV0MiJ2BFPVwqdCNIPmFOTldeUl5mPlMuMjkwJGQ9Zko9ZzJLWE5KY3IjXjlUKiFhalJXcDhiZyZoMCMhXjBSIlZvbXExbVljSWk2XShNbTEiaCFNXGdOWVsmMmRqaiI6LSIiSmhebytySTluLT87QTJuTVo5Vm5pNFZaQmYoc1ROTlgrOUQuV0I8Tz8nKzlBUjJcdFt0a0pbWHU0YWJtbyFzZCIiTUE6UiMjRSoia0tXSSdGYzY5Q0AhWjdxcG8vRSNaOCE8RGpyTFVLXTdbby5tI0hGNF4vcSpLLThqamw0PT8xKy1eIjdFVG04LU0vPC4iajFKJElCZUk2XUwpZV9APmphWDBvJyopWE8kbHNnMWFZYlUkImA3ZjlhK3BXKShSIl8iUG1jRGw8NFJxQlYvLEFdL0wsPCUqV2pqaXBUYyk2UFhAOSdUb0lFbSJDaS5EYy5waT0tTGE6WV0qVHFKY3M8ZlgmYyRgLUUqLVZhc0ghMCpiUEs0XklhOjQ5cydBJDsvNDI9PiZPY0hMYVRTMUcwM2dQaE0vJVpwXSQ+TjNodExKbG1AJTJPNjtRRD5RXUFqNFRybCIxNnQpX0lLNDtXOGBOKl9IS2swLV9qRGs3Y01qYypLJEM0ZTNgOS42XT1JY3I/Z3NZJlhFLW5oT1hSdFtbaDFpZF8+TkhTXF9dSSg2RkJOTGtUOFJVbzJMKFhBK2ttNDkpWG07Jy4uMGwxWzg8c3IhJUdRY0FjMjo4Jy5xbiYncVZELmNKczc6JC9jJEslZFgiLjNGMjBBVGc8UGt0RS8pJklFW2xZUm47VE0jMnVLZ1EoTXRGPDNUXkVgIVI3UDo4QGtBVUVedVpQZz86azEnZyYlKGhZKStOLCs7am5aSDIuQzwocl1JVThAUytqTGstMTY2QEpNSz4hLVw4PVxaO0QyQjtxcjlYVmtobCYyO1ZRNm1aTWIqSCpgO2hHTzpPPkc6RmUpLltJJkQ1Y0lTajptVC5QRG8ncXM3a21UNFU4SyRGJG5KQSZSUmo6WmhQQCshRUVbcT9TJHVWSDFaVzpcY0p1PSNjcyNCcjJmRjx1XTYuPidfcjlFcWtKbDhbK1RQcm09QEBhYHAvTC1OWFxHWG5ZcSo/bC5waEA8WGM/a2ZuazUsN1VeSTFbS1RWPVxecjM0NjJEKiQkI1p1PEVsQl41QDU5Pk5oMD1bYV5ZRGJWWys5PUFfM1JuO0dQQmosOlFyRzVzbXVeaFVbJXE+UyFAajdyVl4sPmolT0leSVJhUnA4KFJAYDNOQ0MvY00haDI3QiNWNDpkOzY1UG8qSUdRRHFARzg6Qn4+ZW5kc3RyZWFtCmVuZG9iagoxMiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAzNTk3Cj4+CnN0cmVhbQpHYiFsIj4+czlLJnE4MDFSJjxwLz1qWVJwbyZ0VEltKGtyJ1A+blJRLCxESiw2Li5fSyZxbUNjbl82Mk89WWVYSFdOX2pEKiVHP2xcVUp1KFxuQTcnJCInInBUJmJSO1Q5P3JhLzdSOkMzWzlyK1w3Qm5cTD04KE5BNllXSSZMMjxAZHRTcnFtQzxmQG8vREBFXyUwLSQ+IjA+dStWQnNfcmQ4NEMlV3E4dUA+NEs1KGo5Rm5PbCxkO1hoKG5WSCVtPmE1Jm5mREJBZVFaKj4kKnQ2SiZKTSI9cnV0QCtFXjcrODtpdVduI2lMO04hSm5ZWzBIWSNKUWlpXVhSLzhnRyJZKWw+YFtdSCQ9T180aDNac09NQHRoZjNjZi9xLmRlSzhBXjpKJ2JzSUMrT2I3PnFCcTsoNlBTTipPbDg1IXE2ND5bLD1eVkVPVUdxNypRbmJaOCRkTjUiJVlLUHFWNTBCUy5gRmlLamMtJjBTaVombWNxVichMSopaT1BQjVrJTlkLDInaUhQImpodTNdNUtoYyg2K0Q2TEdrN0ZyMk5JM3BnSURjS0lzcHM8PEFAb0UjQ2c5b0VPNHAmckNtQnBBV1wpaiUwcVleRWQ1dV8qLiI3bms/PiZgViZENiFEKiksaWZAM3I9cVE8XzpIcCEjM1JxPkFcWlIxPitTa04nXjx0PzZaYTIicGBrQSIkamZwWj4sMkZsVXVXZ2YwOiknczRDOzduRnQwP0JPOzBtX18qZDojKmw5YDVSO2YkT2drX3FaMzw1I0g7NVFSa1k2MSlfQjxFQ3MhOWFRJDFkTU88aU1fPmNCJT42M0I0QUkjYU1iU0dfUTtcOWckJlN0VTVPJl9eVG5wcWM0QlFEOlJxNiJzZlRiNWgiNGFtUFVfPFFgW25fTkVRIisycVAlXGdPN2UrJF5AVUxaVDc2ZD5vUVZxNlJNaU0+TFFULl0iLTQpOzRFNG9HP0M8WmFDZT8yNXFtJUAqXVdDYChXRSU9YDpxQk5XSjctNVNfKT9AX2stOz1ZTzYmcSEwRiJHW18pXTUhS0RrWzpZXVA+KFFjMnRnVi9VcV9bbGFDST1RP0NYYlRvUDBSMyJlQmVNTiZMTCpAc0U/cTl0J2oubnFHKE1ZJVxGYnJgRSg3QlReWF5RLHNPZl9xbD9eTC1IPE5mRSI1cC1xZF9sVkdNO1I5WnJnakM0TGNSUStxZGw1LVhrQm4uWC1KUzxAUztEb20pRUdWcmhaWClfOlM+XnFoNHIxayU+UiQ1akpUbjhDT1QnJytpT3IuMjk9MjVmIk8xPidpT2pZUDBEYWF0Y0ZBK0oraGRlaEcwQUc+LmlyNjJsYVhvTFheTCdlPD9rJCIpRygnV0kxWU8pJUlMS0BSYFg3JDovOl9PT2o+LlVdQTY6SGRaODViWjJVOmBFaFhCT2xfdDE0YFpoSitxQkBBTV40TmUtIihNRS0saG91OklPciVSP1suODdlPzdgTEo1dWZQSUAkN0IoTDZbRS83LSJMdGY5OE1oZWleLEw8LjhzLSc3Ki87RUJtIXVHZlxrZyJaSVxFSERLQ0RcQltfa0U8Y21URDQvVlhKR0Y3bTs/XVZbJmZnS0g7KWxhP1JeKmRtU1dwRENmbUJbYDlCT1JHRCFRQGAmZlRfdDY2QjQ1aj5tIkIjby5ZOFRzNFFuVEZxQyMmdUdTbSJDWykmMlBpMUg7PyZubDlydV1ZITVbJ0BFPC0yXEQpJVo1Nk43RjxpRmFLTiMxUWhTQ21YbVhscTkqQz1YSEYzTmxmJlhUVUhQSzFkYyo7S0MxaztEaks0bz1PNVk5ZytCZSFiUSM/XShWZiRfX21TUzFwXnUmdDprTzowPXQ6XGJKYyNZPHBUZyFcKiJXRjAmZksqVU4kZj9ESidyIlxYPk0rcSI6KzlkJkFgRCckWztZYGFiaUghLTdERyRFRGIoVi5WIjwsKmUzM1pqamNIYShORTFERUxgaUpgP19WTSVaRlgwcj1aSDNENF5gLDhkbWcoY2dGJUIya11FLm5nJWNaXDM6KG0wNTdeV3BiRiVvamNZT2JJJzU2W0tOQlJsMyhcPnUsVkcuOUdZVz5ARitRXmQ9XDsibjFSOjo4PiVTO2wzKkBxXWY8KFRkayJlNiE5VTtcLU9kXHRRYW9TNiNaVChnLVJ0K2tdLGJHW0BsIycvRj9EW0VkMGEiPFtYPSM8bjhvITxQL1kjRytDRFVAXywqZGktPiQuSSsnY0wpTz1zcFNuUUFxLyUlKkQqIyZXbVNIUjJpO2tEXD0nXSk/TGI+JF8vNCczbk8/TTZqNTYkMWtvYEFMI24qUDJMYktgS2dlVzwydVNrOFJcSCJBQFlTSWghWllUQzk+TTZvNTA5Zj0vVEpkYC8uXzdaJVY0KiVjTjIqO2I2WVZyPCo9JVpFaU1qPk9tal0zWGtBaj9WNGIsNlxpPy1UazltYmBgaC9OY2tBUkU3XWg1aDBbLzM1PSQ7P14kMl1Rb1lPVSVYMiE0N3AvM1FOa2dUYFRVT1dhaF1iTXVfPSslPyY1bCVUWDBbQUwnbGtSc2VlXGJnPS05PTBmT0BVT3UqbEBTSCEsQFdMNXFuJltZKENKaTkoU0JmWE5YWD9zZFVjSWNUXVhQJWJeRXBwPykzXEsrTT9lMFlUcUdFLWJxJDJTMCIoXCQ6QTk9cyIxJHRuIjRSRTVWRyNqVi5SSl4pLTlQXUpkcVwvTmUlSG4tXlAlcSIzRl8pO2MxY2JTXFhNaC1sZypGLlVsSltFV2lzaHA3T21QRV9AMWA0b0tzMi47ajlGRlozUmEqU1FSZyk3UmEnU2QsVGAnKHFAS0YxMkBfMW1ESEdhNSJnbk5VLyMiKzFPOEFxbmdaMEMmZV8tYi0hbUFzZzxCQ0ZfcVRZPnFeVFI9LkYqbiJvUktuNiYuYTRUVzpMTEU9R3UndVJzME1ecFxHOnRNWytWQjtcPyhqXmg9bEFqbWMxQlJxLjg8QGtRN1ItLEpwZWFXQEQtMU5KKj4uR1EuLj5tWEpBNVs6UHElKkJFMmpGSzMxPWxqcWFubylNLDBcOlQ3az9zMSNtSS5UcUtuLHVRRyJsS2wzTi84LSVPRHE7PVVxNXQ+RGk8XTwkRWYrIkFjS0ppZ1BoKUFTWCUlO2xNSEEqcnBCMjU4IWBsa188VWA1YUdlYWIjdGtbPyE7V1oobEZVJiJPQiJ1Vmt0Nm46NkMmWC5rbzMuKSorK1ZpVTJodU5kckRgRyNPWztaNUJlOVNzN0o7Jjc9aFZRQGFVXThVM1InWSxWTEYnbk5gXWhMUVIvPUkqVlojPV9mQXBgQS04PU48XHAnZHBJLlQ/RWduS102XV9YXj1KNidXdC1va3JXUFRdOmVJKEhnWm9yOF9qWkFAVShMPkwrM1huWUUmbjpaY2U6K2A8UC9xQUpXWHBTVnRaZCdeOUNPKV85LGxbY19lXU0tWG5UYyZpInNlK0liV3FcVyFdIiMjSUAwMl1kTVJjTS9jNWBTdCpsZ2lVIlF1O044PylObV1eJlUkPWNnUjolXCxwSFcvaGc0Y01LNWBbMj1pcEZFRVplQDxaSkpySTkqalondWdpT3JbOjYjMTI3MW1wVC5VYiozPWYnSGheWGhjckpONWBCNWJmMlpVOjg2UG84NUtEKyJoRildPmFIPltpPlgqT09OZzU0VXUuTktRNE8zN083WyZNZFw6PiYhayd1UFpINkUqaU1RQSFqXSReJW8jQkBrZjo8ZWliKl8rYk9rb3BsNGxAOU9pPEYjQDVOQ2kvN3Q0KG5GUEoqUysibTd0OHJaOjkvUDQsK1MwKilGbVVjRXQnTzVhSGRUXi0hOS4tTGZkSlMvYCYoJUY2XTI3YDEtdXMoOzJzOF4sQShAYFJpLFpDMSE7ZXI6LU1lOTIiRms4WENRQjs9JUFaZEMvPktNPXQzLVMnVW9FXHNkRyU+MUQ1Rm1BT2BTQiFRZlFhMEM6YUE0WVdRLm4iczpqYVZySilfU0YzTS9ZW0hdMW8tOV1JckZHVSRPS1hRSjIoKW9yVSstIk0lKDI7OFlgaS4jOyhGQWkpLjN1S2Q2NiR1X2FBS05bMTtRUjxXMHBBZys1I3FrI3FAKFU3bFE9R0dqUy8mOlxiLyVHT09wTENwQm9AJyJOcTVlJUNbdCpvdU9yRTRVVz41UEg+YHJwZVg5Pyt0JlZQODZzPm5RNCc6KVRXZXFnPU1zVDFzLVFDc01lI1s8KDtXMGI8JlVpT1VeSideQiVscnVLMUU3cDhAQlE3aDVdTVhPYCd0blFDaS9tW2JuM0tuJmNQY1guYkxnbmIjYi1Vbl1PYEgrVVNiM3E+SVRIPShNUmQlN0lhSWQ1VU5yWz5sYyguNlNnQCstYlVHU3NDVlZaQCE9THBtMFUiby03VC8lO0pVQSZ0QSsiYCZIaiUqLzJIVkhfXFVzNCU4ZnFJc2UoWCwlM0ZOOjNoYGg6ZSQscigmaXVaZ21qSCdFLi9GQiZdQ1JNQVBQI1NSU20tNkAxU15YWmFmSixPbClrUCcubjxpI3ReNk1uYmpkXWxnImkxXmolb09IZUtvL1RJcz1UJTVIdEpQW2ZcKF9aWVZHJENOW0c4Q3BIUixEKlZockZTRWxLUkM3KD91aiRrSUctSFNMKWNCWUoiMD1qSVBVXDA1XidHXT07X0dpalxZTi9DdV4mZ1UnT25FJzBsc0YiPG8jWDFLcTUmZUFhTS5JXydjbFEsOnNPPm0xPyxkOjVxfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMwowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDEyMiAwMDAwMCBuIAowMDAwMDAwMjI5IDAwMDAwIG4gCjAwMDAwMDAzNDEgMDAwMDAgbiAKMDAwMDAwMDQyNCAwMDAwMCBuIAowMDAwMDAwNTM5IDAwMDAwIG4gCjAwMDAwMDA3NDQgMDAwMDAgbiAKMDAwMDAwMDk0OSAwMDAwMCBuIAowMDAwMDAxMDE4IDAwMDAwIG4gCjAwMDAwMDEyNzkgMDAwMDAgbiAKMDAwMDAwMTM0NSAwMDAwMCBuIAowMDAwMDA2ODUxIDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDI0YjczYjc0MzVmYzJjZGE2YTAwMmU3MTcyMDRkMThiPjwyNGI3M2I3NDM1ZmMyY2RhNmEwMDJlNzE3MjA0ZDE4Yj5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gOSAwIFIKL1Jvb3QgOCAwIFIKL1NpemUgMTMKPj4Kc3RhcnR4cmVmCjEwNTQwCiUlRU9GCg==";
+  try{
+    var bin=atob(B64),n=bin.length,u=new Uint8Array(n);
+    for(var i=0;i<n;i++)u[i]=bin.charCodeAt(i);
+    var blob=new Blob([u],{type:"application/pdf"}),url=URL.createObjectURL(blob);
+    var dl=document.getElementById("dl"),vw=document.getElementById("view");
+    dl.href=url; dl.setAttribute("download","Olusola_Kumuyi_CV.pdf");
+    vw.href=url;
+    if(navigator.msSaveOrOpenBlob){dl.addEventListener("click",function(e){e.preventDefault();navigator.msSaveOrOpenBlob(blob,"Olusola_Kumuyi_CV.pdf");});}
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
